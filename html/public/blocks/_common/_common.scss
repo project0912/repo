@@ -1,0 +1,48 @@
+html {
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background: #FFF url('../img/bg.png') repeat-x 0 0;
+	font: 14px/1.3 $font-stack-verdana;
+	text-align: left;
+	color: #000;
+}
+a{
+	color: $color-link;
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
+}
+strong, b {
+	font-weight: bold;
+}
+em, i {
+	font-style: italic;
+}
+small {
+	font-size: $font-size-small;
+}
+sup, sub {
+	line-height: 1;
+	font-size: 10px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: $grid-width;
+}
+
+
+
+
+
+
+
+
+
+
+
+

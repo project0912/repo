@@ -1,0 +1,44 @@
+FAIL	js/controllers/crisis/CrisisMakeclaimController.js(1)
+js/controllers/crisis/CrisisMakeclaimController.js:82:22	Unnecessary semicolon.
+FAIL	js/models/Crisis.js(1)
+js/models/Crisis.js:67:34	Don't make functions within a loop.
+FAIL	js/models/Evidence.js(1)
+js/models/Evidence.js:57:34	Don't make functions within a loop.
+FAIL	js/routes/evidence/EvidenceRoute.js(2)
+js/routes/evidence/EvidenceRoute.js:6:12	Mixed spaces and tabs.
+js/routes/evidence/EvidenceRoute.js:7:12	Mixed spaces and tabs.
+FAIL	js/tests/stringGenerator.js(3)
+js/tests/stringGenerator.js:21:1	Mixed spaces and tabs.
+js/tests/stringGenerator.js:22:1	Mixed spaces and tabs.
+js/tests/stringGenerator.js:23:1	Mixed spaces and tabs.
+FAIL	js/tests/testMain.js(9)
+js/tests/testMain.js:22:1	Mixed spaces and tabs.
+js/tests/testMain.js:23:1	Mixed spaces and tabs.
+js/tests/testMain.js:24:1	Mixed spaces and tabs.
+js/tests/testMain.js:25:1	Mixed spaces and tabs.
+js/tests/testMain.js:26:1	Mixed spaces and tabs.
+js/tests/testMain.js:27:1	Mixed spaces and tabs.
+js/tests/testMain.js:28:1	Mixed spaces and tabs.
+js/tests/testMain.js:29:1	Mixed spaces and tabs.
+js/tests/testMain.js:39:12	Mixed spaces and tabs.
+FAIL	js/tests/validatorTests.js(17)
+js/tests/validatorTests.js:22:28	The object literal notation {} is preferrable.
+js/tests/validatorTests.js:26:28	The array literal notation [] is preferrable.
+js/tests/validatorTests.js:103:22	Don't make functions within a loop.
+js/tests/validatorTests.js:123:22	Don't make functions within a loop.
+js/tests/validatorTests.js:144:22	Don't make functions within a loop.
+js/tests/validatorTests.js:173:22	Don't make functions within a loop.
+js/tests/validatorTests.js:198:22	Don't make functions within a loop.
+js/tests/validatorTests.js:219:8	Mixed spaces and tabs.
+js/tests/validatorTests.js:220:8	Mixed spaces and tabs.
+js/tests/validatorTests.js:221:8	Mixed spaces and tabs.
+js/tests/validatorTests.js:222:8	Mixed spaces and tabs.
+js/tests/validatorTests.js:223:8	Mixed spaces and tabs.
+js/tests/validatorTests.js:224:8	Mixed spaces and tabs.
+js/tests/validatorTests.js:225:8	Mixed spaces and tabs.
+js/tests/validatorTests.js:226:8	Mixed spaces and tabs.
+js/tests/validatorTests.js:227:8	Mixed spaces and tabs.
+js/tests/validatorTests.js:228:8	Mixed spaces and tabs.
+
+# JSLint failed, 34 violations in 7 files.  71 files scanned.
+

@@ -1,0 +1,33 @@
+{
+  "name": "verily",
+  "version": "0.2.1",
+  "description": "Crowdsourced verification",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "verily:/var/www/very.git"
+  },
+  "author": "AbdulFattah && Dmytro && Peter",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "ember-precompile": "~0.2.2",
+    "grunt-ember-templates": "~0.4.14",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-jsdoc": "~0.3.3",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-requirejs": "~0.4.1"
+  },
+  "dependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "directories": {
+    "doc": "doc"
+  }
+}

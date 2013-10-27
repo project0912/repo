@@ -1,0 +1,3 @@
+Questions:
+
+Which character codeing do we accept? Do we support foreign languages(special characters?)

@@ -1,0 +1,46 @@
+<form {{action "addEvidence" on="submit"}}>
+<div class="modal-header">
+    <button type="button" class="close" {{action close}}>&times;</button>
+    <h2>{{parentClaimName}}</h2>
+</div>
+
+<div class="modal-body" style="max-height: 800px;">
+    {{#with error}}
+        {{#if hasErrors}}
+            <div class="alert alert-error">
+                {{errorMessage}}
+            </div>
+        {{/if}}
+     {{/with}}
+
+    <div class="control-group disabled">
+        <div class="row-fluid">
+            <div class="span6">
+                {{view Ember.TextField valueBinding="title" placeholder="Your evidence title" class="percentWidth90"}}
+                {{view Ember.TextField valueBinding="street" placeholder="Street" class="percentWidth90"}}
+                {{view App.CitiesAutoCompleteFieldView placeHolder="City" geoDataBinding=geoData valueBinding=city }}
+                Check the box if this is true <span></span>{{view Ember.Checkbox checkedBinding="support"}}
+            </div>
+            <div class="span6">
+                {{view App.MapMarkerCreateView latBinding=lat lngBinding=lng centreLatBinding=mapCentreLat centreLngBinding=mapCentreLng class="height250"}}
+            </div>
+       </div>
+
+       <div class="spacingBottom"></div>
+       
+       <div class="row-fluid">
+           <div class="span12">
+                {{view Ember.TextField valueBinding="descr" placeholder="Verification request description" class="textareaStyle"}}
+           </div>
+       </div>
+
+       <div >
+            {{view App.ImageUploaderView imageIDsBinding=imageIDs}}
+       </div>
+
+    </div>
+</div>
+<div class="modal-footer">
+    {{input class="btn btn-primary" type="submit" value="Add Evidence"}}
+</div>
+</form>

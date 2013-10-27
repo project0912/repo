@@ -1,0 +1,1 @@
+define(["ember"],function(e){var t=e.Route.extend({setupController:function(e,t){var n=this.controllerFor("crisis").get("model");e.set("model",n)}});return t});

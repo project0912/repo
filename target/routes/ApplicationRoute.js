@@ -1,0 +1,1 @@
+define(["ember","models/User","utils/utils"],function(e,t,n){var r=e.Route.extend({setupController:function(e,n){var r=t.create();r.getCurrentUserInfo(),e.set("user",r)},actions:{logout:function(){var e=this,r={type:"logout"},i=function(n){n&&e.controller.set("user",t.create())};n.ajax.makeAJAXPostCall("router.php",r,i)}}});return r});

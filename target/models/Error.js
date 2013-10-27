@@ -1,0 +1,1 @@
+define(["ember"],function(e){var t=e.Object.extend({id:"",code:e.computed.alias("id"),message:"",resolved:!1});return t});

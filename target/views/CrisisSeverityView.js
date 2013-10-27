@@ -1,0 +1,1 @@
+define(["ember"],function(e){var t=e.View.extend({templateName:"crisis/severity",prevVote:function(){return this.get("controller.controllers.crisis.castedSeverityVote")}.property("controller.controllers.crisis.castedSeverityVote")});return t});

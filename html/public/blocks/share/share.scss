@@ -1,0 +1,61 @@
+.share {
+	position: relative;
+}
+.share__layer {
+	display: none;
+	position: absolute;
+	bottom: 100%;
+	margin: 0 0 3px 0;
+	padding: 5px 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,.7);
+	background: $bg-gray;
+}
+.share__button {
+	@extend %button;
+}
+
+.share__link {
+	width: 250px;
+	margin-right: 45px;
+}
+.share__field {
+	width: 100%;
+}
+
+.share__cancel {
+	@extend %close;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.share__social {
+	margin: 0 10px 0 0;
+	padding: 5px 0 0 0;
+}
+.share__icon {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin: 0 5px 0 0;
+	cursor: pointer;
+}
+.share__icon_fb {
+	background: url(../blocks/share/img/facebook.png);
+}
+
+.share__icon_tw {
+	background: url(../blocks/share/img/twitter.png);
+}
+
+.share__icon_gp {
+	background: url(../blocks/share/img/google_plus.png);
+}
+
+
+
+
+
+
+
+

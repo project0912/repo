@@ -1,0 +1,20 @@
+.footer {
+	padding: 20px 0;
+	background: $bg;
+	line-height: 2;
+	font-size: 16px;
+	text-align: center;
+}
+
+.footer__copyright {
+	margin: 0 20px;
+}
+.footer__link {
+	margin: 0 20px;
+	color: #000;
+	text-decoration: none;
+	white-space: nowrap;
+	&:hover {
+		text-decoration: underline;
+	}
+}

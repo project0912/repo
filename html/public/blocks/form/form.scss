@@ -1,0 +1,29 @@
+.form_row {
+	margin: 3px 0;
+}
+
+.form__input {
+	padding: 4px 10px;
+	width: 180px;
+	border: 0;
+	border-radius: 10px;
+	@include box-shadow(inset 0 1px 0 #000, inset 0 3px 3px rgba(#000,.3));
+	background: #FFF;
+	vertical-align: top;
+	outline: none;
+}
+
+.form__button {
+	@extend %button;
+	margin: 2px 0;
+}
+
+.form__error {
+	margin: 0 0 3px 0;
+	font-size: 12px;
+	font-style: italic;
+	text-align: left;
+	color: #F00;
+	text-shadow: 0 1px 1px rgba(0,0,0,.5);
+}
+

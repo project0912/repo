@@ -1,0 +1,133 @@
+ html, body {
+    height: 100%;
+  }
+
+.centre{
+    margin: 0 auto;
+    width: 960px; /*SET your width here*/
+}
+.vertical-space{
+    height: 75px;
+}
+.space{
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.fixed-width{
+    width: 75px;
+}
+.cutomBtn {
+    width: 80px;
+}
+.bigImage{
+    max-height: 175px;
+}
+.spacingBottom{
+    margin: 0px 0px 15px 0px;
+
+}
+.location{
+    position: relative;
+    left: 10px;
+}
+.boarderRightBottomShade{
+    border-style: solid;
+    padding: 5px 5px 5px 5px;
+    border-width: 1px;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+}
+.statisticsPadding{
+    padding-right: 12px;
+}
+.spacingFooter{
+    margin-bottom: 80px;
+}
+
+.greenBackground{
+    background-color: green;
+}
+.redBackground{
+    background-color: red;
+}
+.customBtnGreen{
+    width: 50%;
+    background: green;
+    color:white;
+}
+.customBtnGreen:disabled{
+    background: green;
+    color:white;
+}
+.customBtnRed{
+    width: 50%;
+    background: red;
+    color:white;
+}
+.customBtnRed:disabled{
+    background: red;
+    color:white;
+}
+.evidenceBoarder{	
+    padding-top: 10px;
+    border-style: solid;
+    border-width: 1px;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+
+}
+.spacingFooter{
+    margin-bottom: 80px;
+}
+
+.smallFontSize60{
+    font-size: 60%;
+}
+
+.hg352 {
+    height: 352px;
+    margin-bottom: 25px;
+}
+
+.wd370 {
+    width: 370px;
+}
+
+.height250 {
+    height: 250px;
+}
+
+.ht100{
+    height: 100%;
+}
+
+.height100 {
+    height: 100px;
+}
+
+.textareaStyle {
+    width: 100%;
+    min-height: 130px;
+    resize: none;
+}
+
+.percentWidth90 {
+    width : 90%;
+}
+.commentTextAreaStyle{
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+}
+
+.height150 {
+    height: 150px;
+}
+
+.ImageBorder
+{
+    border-width: 1px;
+    border-color: blue;
+}

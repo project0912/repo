@@ -1,0 +1,59 @@
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <form class="navbar-search pull-left">
+                <input type="text" class="search-query span2" placeholder="Search">
+            </form>
+            <div class="nav-collapse">
+                <ul class="nav pull-left">
+                    <li class="divider-vertical"></li>
+                    <li class="divider-vertical"></li>
+                    <li class="divider-vertical"></li>
+                    <!-- <li><a href="#">Make a claim</a></li> -->
+                </ul>
+                <a class="brand" href="#" style="float:left; margin-left:20%; position:relative;">Verily</a>
+                <ul class="nav pull-right">
+                    {{#if user.isLoggedIn}}
+                        <li> <a> Welcome {{user.name}}! </a> </li>
+                        <li> 
+                            {{#link-to "crises.create"}}
+                                Add Crisis
+                            {{/link-to}}
+                        </li>
+                        <li><a href="#" {{action logout}} >Log out</a></li>
+                    {{else}}
+                        <li>
+                        {{#link-to "user.login"}}
+                            Login
+                        {{/link-to}}
+                        </li>
+                    {{/if}}
+                    
+                    <li style="padding-top: 5px;">
+                        <span class="badge badge-info" style="font-size: 25px; line-height: 25px; padding-right: 15px; padding-left: 15px; border-radius: 20px">
+                        ?
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <br><br><br><!--Do not know how to get rid of it-->
+    <div class="row">
+        {{outlet}}
+    </div>
+</div>
+
+<div class="navbar navbar-fixed-bottom">
+    <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

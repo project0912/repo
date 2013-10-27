@@ -1,0 +1,1 @@
+define(["ember","models/Errors"],function(e,t){var n=e.ObjectController.extend({error:"",tempComment:"",init:function(){this.set("error",t.create()),this._super()}});return n});

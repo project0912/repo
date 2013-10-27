@@ -1,0 +1,101 @@
+<div class="modal-header">
+    <button type="button"  {{action backToClaim}} class="close">&times;</button>
+    <ul class="breadcrumb" style="margin: 0px">
+        <li><a {{action backToCrisis}}>{{parentCrisisName}}</a> <span class="divider">/</span></li>
+        <li><a {{action backToClaim}}>{{parentClaimName}}</a> <span class="divider">/</span></li>
+        <li class="active">{{controllers.evidence.title}}</li>
+    </ul>
+    {{#with controllers.evidence.error}}
+        {{#if hasErrors}}
+            <div class="alert alert-error">
+                {{errorMessage}}
+            </div>
+        {{/if}}
+     {{/with}}
+</div>
+
+<div class="modal-body" style="max-height: 700px">
+    {{#with controllers.evidence}}
+    <div class="row-fluid">
+        <div class="span8">
+            <img src="img/img.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+            <div class="row-fluid">
+                <br/><br/>
+                <div class="span12 bottomSpacing">
+                    <div class="span3">
+                        {{#each tag in tags}}
+		               <span {{bindAttr title=tag.short}}class="label label-info">{{tag.name}}</span>
+                 	{{/each}}
+                    </div>
+                    <div class="span3">
+                        <div class="btn-group">
+                            <button class="btn btn-small" type="button"><em class="icon-share"></em>Share</button>
+                            <button class="btn btn-small" type="button"><em class="icon-flag"></em>Flag</button>
+                            <button class="btn btn-small" type="button" {{action editEvidence}} ><em class="icon-edit"></em>Edit</button>
+                            <button class="btn btn-small" type="button"><em class="icon-list-alt"></em>History</button>
+                        </div>
+                    </div>
+                    <div class="span2"></div>
+                    <div class="span2">
+	                        <table border="0" style="width: 170px; background: #CFCFCF">
+		                        <tr>
+		                            <td style="width: 50px"><img src="http://lorempixel.com/50/50/"></td>
+		                            <td>
+		                                <small {{bindAttr title=createdText}} class="muted">asked {{created}}</small><br>
+		                                <strong><a href='#'>{{author.nickname}}</a></strong><br>
+		                                <span class="reputation-score" title="reputation score" dir="ltr">{{author.rating}}</span>
+		                            </td>
+		                        </tr>
+		                    </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                {{{descr}}}
+            </div>
+            <div class="row-fluid">
+                <ul class="thumbnails">
+                    <li class="span1"><a href="#" class="thumbnail"><img src="http://lorempixel.com/100/100/"></a></li>
+                    <li class="span1"><a href="#" class="thumbnail"><img src="http://lorempixel.com/100/100/"></a></li>
+                    <li class="span1"><a href="#" class="thumbnail"><img src="http://lorempixel.com/100/100/"></a></li>
+                    <li class="span1"><a href="#" class="thumbnail"><img src="http://lorempixel.com/100/100/"></a></li>
+                    <li class="span1"><a href="#" class="thumbnail"><img src="http://lorempixel.com/100/100/"></a></li>
+                    <li class="span1"><a href="#" class="thumbnail"><img src="http://lorempixel.com/100/100/"></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="span4" style=" overflow: auto;">
+            <table style="width: 100%;" border="0">
+                <tr>
+                    <td style="display: table-cell; vertical-align: top;">
+                        <div style="margin-right: 30px">
+                            {{#if controller.userCanCreate}}
+                                {{view App.CommentsField valueBinding="tempComment" placeholder="Join discussion" class="commentTextAreaStyle"}}
+                            {{/if}}
+
+                            {{#each comment in comments}}
+                                <div>
+                                    <a href="#">{{comment.author.nickname}}</a> <span {{bindAttr title=comment.createdText}} class="pull-right muted">{{comment.created}}<em class="icon-flag"></em></span>
+                                    <p>{{comment.descr}}</p>
+                                </div>
+                            {{/each}}
+                        </div>
+                    </td>
+                    <td style="width: 50px; display: table-cell; vertical-align: top;">
+                        <div class="btn-group btn-group-vertical">
+                            <button {{action upVoteItem}} {{bindAttr title=agreesText class=":btn castedAgree:btn-warning"}} type="button" style="width: 50px"><em class="icon-chevron-up" ></em><br>{{agreesCount}}</button><br>
+                            <button  {{action downVoteItem}} {{bindAttr title=disagreesText class=":btn castedDisagree:btn-warning"}} type="button" style="width: 50px"><em class="icon-chevron-down"></em><br>{{disagreesCount}}</button><br>
+                            <button  {{action bookmarkItem}} {{bindAttr title=bookmarksText class=":btn castedBookmark:btn-warning"}} type="button" style="width: 50px"><em class="icon-star" ></em><br>{{bookmarksCount}}</button><br>
+                            <button {{bindAttr title=viewsText}} disabled="disabled" class="btn statistics" type="button" style="width: 50px"><em class="icon-eye-open"></em><br>{{viewsCount}}</button><br>
+                            <button {{bindAttr title=commentsText}}class="btn statistics" disabled="disabled" type="button" style="width: 50px"><em class="icon-comment"></em><br>{{commentsCount}}</button><br>
+                            
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    {{/with}}
+</div>

@@ -1,0 +1,101 @@
+<div class="centre container-fluid">
+    {{#with controllers.claim}}
+    <div class="row-fluid" style="margin-bottom:41px">
+        
+        <div class="span1">       
+            <div class="btn-group btn-group-vertical">
+                <button {{action upVoteItem}} type="button" {{bindAttr title=agreesText class=":btn :space :fixed-width castedAgree:btn-warning"}}><i class="icon-arrow-up"></i>{{agreesCount}}</button>
+                <button  {{action downVoteItem}}type="button" {{bindAttr title=disagreesText class=":btn :space :fixed-width castedDisagree:btn-warning"}}><i class="icon-arrow-down"></i>{{disagreesCount}}</button> 
+                <button  {{action bookmarkItem}} type="button" {{bindAttr title=bookmarksText class=":btn :space :fixed-width castedBookmark:btn-warning"}}><i class="icon-star"></i>{{bookmarksCount}}</button>
+                <button {{bindAttr title=viewsText}} type="button" disabled="disabled" class="btn space fixed-width"><i class="icon-eye-open"></i>{{viewsCount}}</button>
+                <button {{bindAttr title=evidencesText}} type="button" disabled="disabled" class="btn space fixed-width"><i class="icon-folder-open"></i>{{evidencesCount}}</button>
+                <button {{bindAttr title=activeText}} type="button" disabled="disabled" class="btn space fixed-width"><i class="icon-time"></i><small class='smallFontSize60'>{{active}}</small></button>
+            </div>
+        </div>
+        
+        <div class="span3">
+            {{view App.MapInfoView class="height250" latBinding=lat lngBinding=lng}}
+        </div>
+        
+        <!--Space between -->
+
+        <div class="span8 spacingBottom">            
+            <h3>
+                {{title}}
+            </h3>
+
+            <div class="span12" align='right'>
+            		<a {{action backToCrisis}}>[{{controller.parentCrisisName}}]</a>
+            </div>
+
+            <p>
+                {{{descr}}}
+            </p>
+            
+            <div class="span12">
+                <div class="span3">
+                    <div class="btn-group">
+                        <button class="btn btn-small" type="button"><em class="icon-share"></em>Share</button>
+                        <button class="btn btn-small" type="button"><em class="icon-flag"></em>Flag</button>
+                        <button class="btn btn-small" type="button" {{action editClaim}}><em class="icon-edit"></em>Edit</button>
+                    </div>
+                </div>
+                <div class="span2"></div>
+                <div class="span3">
+                    <table border="0" style="width: 170px; background: #CFCFCF">
+                        <tr>
+                            <td style="width: 50px"><img src="http://lorempixel.com/50/50/"></td>
+                            <td>
+                                <small {{bindAttr title=createdText}} class="muted">asked {{created}}</small><br>
+                                <strong><a href='#'>{{model.author.nickname}}</a></strong><br>
+                                <span class="reputation-score" title="reputation score" dir="ltr">{{model.author.rating}}</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="span12">
+                    <button class='btn btn-success' {{action createSupportingEvidence}} >
+                        True, because...
+                    </button>
+
+                    <button class='btn btn-danger' {{action createOpposingEvidence}}>
+                        False, because...
+                    </button>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="row-fluid spacingFooter">
+    	{{#each evidence in evidences.content}}
+
+	        <div class="span3">
+                {{#link-to "evidence" evidence class='a'}}
+	            <!-- Evidence -->
+
+	            <div {{bindAttr class=":span12 :evidenceBoarder evidence.support:greenBackground:redBackground"}} >
+ 	                <!-- <img alt="140x140" class="span12 spacingBottom" src="http://lorempixel.com/140/140/"> -->
+ 
+                    <img alt="140x140" class="span12 spacingBottom" {{bindAttr src=evidence.randomImage}}>
+
+	                <div class="row-fluid">
+	                    <!-- statistics -->
+	                    <div class="span12">
+	                        <div class="btn-group">
+	                            <button {{bindAttr title=evidence.agreesText class=":btn evidence.support:customBtnGreen:customBtnRed"}} disabled="disabled"type="button">
+	                           <em  class="icon-chevron-up icon-white"></em>{{evidence.agreesCount}}</button> 
+	                            <button {{bindAttr title=evidence.disagreesText class=":btn evidence.support:customBtnGreen:customBtnRed"}} disabled="disabled"type="button"><em class="icon-chevron-down icon-white"></em>{{evidence.disagreesCount}}</button> 
+	                            <button {{bindAttr title=evidence.commentsText class=":btn evidence.support:customBtnGreen:customBtnRed"}} disabled="disabled"type="button"><em class="icon-comment icon-white"></em>{{evidence.commentsCount}}</button> 
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+                
+                {{/link-to}}
+	        </div>
+        {{/each}}
+    </div>
+    {{/with}}
+</div>

@@ -1,0 +1,149 @@
+<div class="centre container-fluid">
+{{#with controllers.crisis}}    
+    <div class="row-fluid" style="margin-bottom:41px">
+        <div class="span1">
+
+            <div class="btn-group btn-group-vertical">
+                <button {{bindAttr title=avgSeverityText  class=":btn :space :fixed-width castedSeverity:btn-warning"}} {{action toggleSeverityView target="controller"}}type="button"><i class="icon-screenshot"></i>{{avgSeverity}}</button>
+
+                <!-- Go up one level/escape #with -->
+                {{#if controller.showSeverityView}}
+                    {{view App.CrisisSeverityView}}
+                {{/if}}
+                
+                <button {{bindAttr title=numSeverityText}}type="button" disabled="disabled" class="btn space fixed-width"><i class="icon-user"></i>{{numSeverity}}</button>
+                <button {{action bookmarkItem}} type="button" {{bindAttr title=bookmarksText class=":btn :space :fixed-width castedBookmark:btn-warning"}}><i class="icon-star" ></i>{{bookmarksCount}}</button>
+                <button {{bindAttr title=viewsText}} type="button" disabled="disabled" class="btn space fixed-width"><i class="icon-eye-open"></i>{{viewsCount}}</button>
+                <button {{bindAttr title=claimsText}}type="button" disabled="disabled" class="btn space fixed-width"><i class="icon-tasks"></i> {{claimsCount}}</button>
+                <button {{bindAttr title=activeText}} type="button" disabled="disabled" class="btn space fixed-width"><i class="icon-time"></i><small class='smallFontSize60'>{{active}}</small></button>
+            </div>
+
+        </div>
+        
+        <div class="span3">
+            {{view App.MapInfoView class="height250" markersBinding=markers latBinding=lat lngBinding=lng}}
+        </div>
+        <div class="span8 spacingBottom">
+            <h3>
+                {{title}}
+
+            </h3>
+            <p>
+                {{{descr}}}
+            </p>
+            
+
+            <div class="span12">
+                <div class="span3">
+                    <!-- <span class="label label-info">Tag1</span>
+                    <span class="label label-info">Tag2</span>
+                    <span class="label label-info">Tag3</span> -->
+                </div>
+                <div class="span3">
+                    <div class="btn-group">
+                        <button class="btn btn-small" type="button"><em class="icon-share"></em>Share</button>
+                        <button class="btn btn-small" type="button"><em class="icon-flag"></em>Flag</button>
+                        <button class="btn btn-small" type="button" {{action editCrisis}}><em class="icon-edit"></em>Edit</button>
+                        <button class="btn btn-small" type="button"><em class="icon-list-alt"></em>History</button>
+                    </div>
+                </div>
+                <div class="span2"></div>
+                <div class="span3">
+                    <table border="0" style="width: 170px; background: #CFCFCF">
+                        <tr>
+                            <td style="width: 50px"><img src="http://lorempixel.com/50/50/"></td>
+                            <td>
+                                <small {{bindAttr title=createdText}}class="muted">asked {{created}}</small><br>
+                                <strong>Administrator</strong><br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <!-- Buttons -->
+            <div class="span12">
+                    {{#link-to "crisis.makeclaim"}}
+                        <button class='btn btn-primary'>
+                            Make a Verification Request
+                        </button>
+                    {{/link-to}}
+            </div>
+        </div>
+    </div>
+    {{#each tag in controller.tags}}
+            <span {{bindAttr title=tag.short}}class="label label-info">{{tag.name}}</span>
+    {{/each}}
+    <div class="row-fluid spacingFooter">
+        {{#each claim in claims}}
+        <div class="span4 boarderRightBottomShade" style="width: 30%; bottom-padding:41px">
+            {{#link-to "claim" claim }}
+                <img {{bindAttr src=claim.randomImage}}/>
+            {{/link-to}}
+            
+
+            <h5 class="location">Location</h5>
+            <div class="span12 statisticsPadding">
+                <!-- Statistics -->
+                <div class="span4">
+                    <div class="btn-group btn-group-vertical spacingBottom">
+                        <!-- {{!-- <button  {{bindAttr title=claim.agreesText}} class="btn cutomBtn" type="button" ><em class="icon-chevron-up" ></em> {{claim.agreesCount}}</button>
+                        <button {{bindAttr title=claim.disagreesText}} class="btn cutomBtn" type="button"><em class="icon-chevron-down"></em> {{claim.disagreesCount}}</button>  --}}-->
+                        <button {{bindAttr title=claim.bookmarksText}}disabled="disabled"class="btn cutomBtn" type="button"><em class="icon-star-empty"></em> {{claim.bookmarksCount}}</button> 
+                        <button {{bindAttr title=claim.viewsText}} disabled="disabled"class="btn cutomBtn" type="button"><em class="icon-eye-open"></em> {{claim.viewsCount}}</button>
+                        <button {{bindAttr title=claim.evidencesText}}disabled="disabled"class="btn cutomBtn" type="button"><em class="icon-folder-open"></em> {{claim.evidencesCount}}</button>
+                    </div>
+                </div>
+                <!-- The rest of the info(title + author) -->
+                <div class="span8">
+                    <h4 class="span12 text-left">
+                        {{#link-to "claim" claim class='a'}}
+	                        {{claim.title}}
+                        {{/link-to}}
+                    </h4>
+                    <!-- User Info block -->
+                    <div class="span12">
+                    <table border="0" style="width: 170px; background: #CFCFCF">
+                        <tr>
+                            <td style="width: 50px"><img src="http://lorempixel.com/50/50/"></td>
+                            <td>
+                                <small {{bindAttr title=claim.createdText}} class="muted">{{claim.created}}</small><br>
+                                <strong><a href='#'>{{claim.author.nickname}}</a></strong><br>
+                                <span class="reputation-score" title="reputation score" dir="ltr">{{claim.author.rating}}</span>
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Tags -->
+            <div class="row-fluid">
+                <div class="span12">
+                    {{#each tag in claim.tagList}}
+                        <span {{bindAttr title=tag.short}}class="label label-info">{{tag.name}}</span>
+                    {{/each}}
+
+                </div>
+            </div>
+            <!-- Description -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <p>
+                        {{{claim.descr}}}
+                    </p>
+                   
+                    <!-- <p>
+                        {{#link-to "claim" claim class='btn btn-small'}}
+                            View Claim »
+                        {{/link-to}}
+                    </p> -->
+                </div>
+            </div>
+            <!-- Tags -->
+            
+        </div>
+        {{/each}}
+
+    </div>
+{{/with}}
+</div>

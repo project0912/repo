@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head lang="ru">
+	<meta charset="utf-8">
+	<title>Verily</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://sitename.lh/">
+	<meta property="og:title" content="Copy title">
+	<meta property="og:description" content="Copy description">
+	<meta property="og:image" content="//sitename.lh/images/social.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="icon" href="../public/images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-startup-image" href="/apple-touch-icon-ipad3.png">
+	<link rel="stylesheet" href="../public/css/styles.css" media="all">
+	<link rel="stylesheet" href="//yandex.st/jquery-ui/1.10.2/themes/base/jquery-ui.min.css" media="all">
+	<script charset="utf-8" src="//yandex.st/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<header class="header" role="banner">
+		<div class="wrapper">
+			<a class="header__add" href="#">Post a Claim</a>
+			<nav class="nav header__nav" role="navigation">
+				<div class="nav__name">Catigories</div>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#" class="nav__link">Category 1</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Category 2</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Category 3</a></li>
+				</ul>
+			</nav>
+			<div class="header__auth">
+				<a href="#" class="header__link">Register</a>
+				<a href="#" class="header__link" id="loginLink">Login</a>
+				<form class="form header__login" action="">
+					<div class="form__row">
+						<input class="form__input" type="text" placeholder="Your login">
+						<div class="form__error">Enter your login</div>
+					</div>
+					<div class="form__row">
+						<input class="form__input" type="password" placeholder="Your password">
+						<div class="form__error">Enter your password</div>
+					</div>
+					<div class="form__row">
+						<button type="submit" class="form__button header__button_login">Login</button>
+					</div>
+				</form>
+				<script>
+					$('#loginLink').click(function() {
+						$(this).addClass('header__link_active');
+						$(".header__login").show();
+					});
+				</script>
+			</div>
+			<form class="header__search" action="">
+				<input type="text" placeholder="Search for..." class="form__input header__search-input">
+				<button type="submit" class="form__button header__search-button"><img src="../public/blocks/header/img/search.png" alt=""></button>
+			</form>
+			<div class="header__site">
+				<a class="header__logo" href="#" rel="home"><img src="../public/blocks/header/img/logo.png" alt=""></a>
+			</div>
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<section class="main">
+
+			<div class="boxes boxes_index">
+				<div class="boxes__list">
+					<div class="boxes__item">
+						<div class="boxes__content boxes__content_img">
+							<a href="#"><img src="../public/upload/box.jpg" alt=""></a>
+						</div>
+						<div class="post post_boxes">
+							<div class="post__content">
+								<div class="post__location"><a href="#">Bosnia and Herzegovina</a>, Sarajevo</div>
+								<div class="post__text">
+									<h2>A gas leak, lead to a massive explosion.</h2>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								</div>
+								<div class="post__author">
+									<div class="post__date">11:32  14 September, 2011 by</div>
+								</div>
+								<div class="tags post__tags">
+									<a href="#" class="tags__item">gas leak</a>
+									<a href="#" class="tags__item">explosion</a>
+								</div>
+								<div class="post__go">
+									<span class="post__go-item"><a href="#" class="post__go-action post__go-important">!</a>42</span>
+									<span class="post__go-item"><a href="#" class="post__go-action post__go-positive">✔</a>452</span>
+									<span class="post__go-item"><a href="#" class="post__go-action post__go-negative">×</a>52</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="boxes__item">
+						<div class="post post_boxes">
+							<div class="post__content">
+								<div class="post__location"><a href="#">Bosnia and Herzegovina</a>, Sarajevo</div>
+								<div class="post__text">
+									<h2>A gas leak, lead to a massive explosion.</h2>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								</div>
+								<div class="post__author">
+									<div class="post__date">11:32  14 September, 2011 by</div>
+								</div>
+								<div class="tags post__tags">
+									<a href="#" class="tags__item">gas leak</a>
+									<a href="#" class="tags__item">explosion</a>
+								</div>
+								<div class="post__go">
+									<span class="post__go-item"><a href="#" class="post__go-action post__go-important">!</a>42</span>
+									<span class="post__go-item"><a href="#" class="post__go-action post__go-positive">✔</a>452</span>
+									<span class="post__go-item"><a href="#" class="post__go-action post__go-negative">×</a>52</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="boxes__item">
+						<div class="boxes__content boxes__content_img">
+							<a href="#"><img src="http://www.fresher.ru/manager_content/images/film-katastrofa-metro/1.jpg" alt=""></a>
+						</div>
+						<div class="post post_boxes">
+							<div class="post__content">
+								<div class="post__location"><a href="#">Bosnia and Herzegovina</a>, Sarajevo</div>
+								<div class="post__text">
+									<h2>A gas leak, lead to a massive explosion.</h2>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								</div>
+								<div class="post__author">
+									<div class="post__date">11:32  14 September, 2011 by</div>
+								</div>
+								<div class="tags post__tags">
+									<a href="#" class="tags__item">gas leak</a>
+									<a href="#" class="tags__item">explosion</a>
+								</div>
+								<div class="post__go">
+									<span class="post__go-item"><a href="#" class="post__go-action post__go-important">!</a>42</span>
+									<span class="post__go-item"><a href="#" class="post__go-action post__go-positive">✔</a>452</span>
+									<span class="post__go-item"><a href="#" class="post__go-action post__go-negative">×</a>52</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="boxes__item">
+						<div class="boxes__content boxes__content_img">
+							<a href="#"><img src="http://www.almrally.ru/imageModul/news-8589.jpg" alt=""></a>
+						</div>
+						<div class="post post_boxes">
+							<div class="post__content">
+								<div class="post__location"><a href="#">Bosnia and Herzegovina</a>, Sarajevo</div>
+								<div class="post__text">
+									<h2>A gas leak, lead to a massive explosion.</h2>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								</div>
+								<div class="post__author">
+									<div class="post__date">11:32  14 September, 2011 by</div>
+								</div>
+								<div class="tags post__tags">
+									<a href="#" class="tags__item">gas leak</a>
+									<a href="#" class="tags__item">explosion</a>
+								</div>
+								<div class="post__go">
+									<span class="post__go-item"><a href="#" class="post__go-action post__go-important">!</a>42</span>
+									<span class="post__go-item"><a href="#" class="post__go-action post__go-positive">✔</a>452</span>
+									<span class="post__go-item"><a href="#" class="post__go-action post__go-negative">×</a>52</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</div>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<span class="footer__copyright">© 2013 QCRI</span>
+			<a href="#" class="footer__link">About</a>
+			<a href="#" class="footer__link">Site Map</a>
+			<a href="#" class="footer__link">RSS</a>
+			<a href="#" class="footer__link">Help</a>
+			<a href="#" class="footer__link">Privacy</a>
+			<a href="#" class="footer__link">Terms of Service</a>
+			<a href="#" class="footer__link">Site Feedback</a>
+			<a href="#" class="footer__link">Contact Us</a>
+			<a href="#" class="footer__link">Press & Blogs</a>
+			<a href="#" class="footer__link">Copyright</a>
+			<a href="#" class="footer__link">Creators & Partners</a>
+		</div>
+	</footer>
+
+	<div class="popup">
+		<div class="popup__content">
+			<div class="popup__name">
+				<a href="#">Tornado in Idaho</a> >
+				<a href="#">Has the bridge</a> >
+				<span>surely, photo</span>
+				<a href="#" class="popup__edit" title="Edit this post">[EDIT]</a>
+			</div>
+			<div class="popup__media">
+				<img class="popup__photo" src="http://s4.goodfon.ru/image/1847-1600x1200.jpg" alt="Tornado in Idaho">
+			</div>
+			<div class="popup__info">
+				<div class="tags popup__tags">
+					<a href="#" class="tags__item">gas leak</a>
+					<a href="#" class="tags__item">explosion</a>
+				</div>
+				<div class="share popup__share">
+					<div class="share__layer">
+						<div class="share__link"><input class="form__input share__field" type="text" value="http://habrahabr.ru/"></div>
+						<div class="share__cancel">X</div>
+						<div class="share__social">
+							<span class="share__icon share__icon_fb" title="Facebook"></span>
+							<span class="share__icon share__icon_tw" title="Twitter"></span>
+							<span class="share__icon share__icon_gp" title="Google+"></span>
+						</div>
+					</div>
+					<div class="share__button">Share</div>
+					<script>
+						$('.share__button').click(function() {
+							$(".share__layer").show();
+						});
+						$('.share__cancel').click(function() {
+							$(".share__layer").hide();
+						});
+					</script>
+				</div>
+				<div class="flag popup__flag">
+					<div class="flag__layer">
+						<div class="flag__title">I flag this becouse</div>
+						<form class="form" action="">
+							<div class="form__row">
+								<label class="form__label"><input class="form__radio flag__radio" type="radio" name="flag"> spam</label>
+							</div>
+							<div class="form__row">
+								<label class="form__label"><input class="form__radio flag__radio" type="radio" name="flag"> duplicate</label>
+							</div>
+							<div class="form__row">
+								<label class="form__label"><input class="form__radio flag__radio" type="radio" name="flag"> <input class="form__input flag__field" type="text"></label>
+							</div>
+							<div class="form__row">
+								<button class="form__button flag__submit" type="submit">Flag this</button>
+								<a href="#" class="flag__more">read more</a>
+							</div>
+						</form>
+						<div class="flag__cancel">X</div>
+					</div>
+					<div class="flag__button">Flag</div><!-- add class post__flag_active -->
+					<script>
+						$('.flag__button').click(function() {
+							$(this).addClass('flag__button_active');
+							$(".flag__layer").show();
+						});
+						$('.flag__cancel').click(function() {
+							$(".flag__layer").hide();
+						});
+					</script>
+				</div>
+				<div class="author popup__author">
+					<div class="author__date"><b>Edited</b>: 11:32  14 September, 2011 by</div>
+					<div class="author__avatar"><img src="../public/upload/avatar.png" alt=""></div>
+					<div class="author__name"><a href="#"><b>Tom Soier</b></a></div>
+					<div class="author__rang"><b>Reputation</b>: 125</div>
+				</div>
+				<div class="author popup__author">
+					<div class="author__date"><b>Created</b>: 11:32  14 September, 2011 by</div>
+					<div class="author__avatar"><img src="../public/upload/avatar.png" alt=""></div>
+					<div class="author__name"><a href="#"><b>Tom Soier</b></a></div>
+					<div class="author__rang"><b>Reputation</b>: 125</div>
+				</div>
+			</div>
+		</div>
+			<div class="popup__gallery">
+				for images...
+			</div>
+			<div class="popup__discussion">
+				<div class="actions popup__actions">
+					<div class="actions__item"><a class="actions__plus" href="#"></a>325</div>
+					<div class="actions__item"><a class="actions__minus" href="#"></a>12</div>
+				</div>
+				<div class="comments popup__comments">
+					<div class="comments__new popup__comments-new">
+						<textarea class="comments__new-text"></textarea>
+					</div>
+					<div class="comments__list popup__comments-list">
+						<div class="comments__item">
+							<span class="comments__time">2 hours ago</span>
+							<a href="#" class="comments__author">User Name</a>
+							<div class="comments__text">
+								Proposed rules that would require appliances, lighting and buildings to use less energy have languished for as long as two years waiting for approval, frustrating environmental advocates.
+							</div>
+						</div>
+						<div class="comments__item">
+							<span class="comments__time">2 hours ago</span>
+							<a href="#" class="comments__author">User Name</a>
+							<div class="comments__text">
+								Mayor Michael R. Bloomberg of New York will urge major donors not to aid four Democratic senators who helped block a bill on background checks.
+							</div>
+						</div>
+						<div class="comments__item">
+							<span class="comments__time">2 hours ago</span>
+							<a href="#" class="comments__author">User Name</a>
+							<div class="comments__text">
+								Complex deals that allow the companies to inflate their appearance of strength could lead to another taxpayer bailout, officials have warned.
+							</div>
+						</div>
+						<div class="comments__item">
+							<span class="comments__time">2 hours ago</span>
+							<a href="#" class="comments__author">User Name</a>
+							<div class="comments__text">
+								Several battalions of Sunni fighters stormed a village in eastern Syria, reportedly killing at least 60 people, in a reprisal raid that underscored the sectarian tone of the war.
+							</div>
+						</div>
+						<div class="comments__item">
+							<span class="comments__time">2 hours ago</span>
+							<a href="#" class="comments__author">User Name</a>
+							<div class="comments__text">
+								Proposed rules that would require appliances, lighting and buildings to use less energy have languished for as long as two years waiting for approval, frustrating environmental advocates.
+							</div>
+						</div>
+						<div class="comments__item">
+							<span class="comments__time">2 hours ago</span>
+							<a href="#" class="comments__author">User Name</a>
+							<div class="comments__text">
+								Mayor Michael R. Bloomberg of New York will urge major donors not to aid four Democratic senators who helped block a bill on background checks.
+							</div>
+						</div>
+						<div class="comments__item">
+							<span class="comments__time">2 hours ago</span>
+							<a href="#" class="comments__author">User Name</a>
+							<div class="comments__text">
+								Complex deals that allow the companies to inflate their appearance of strength could lead to another taxpayer bailout, officials have warned.
+							</div>
+						</div>
+						<div class="comments__item">
+							<span class="comments__time">2 hours ago</span>
+							<a href="#" class="comments__author">User Name</a>
+							<div class="comments__text">
+								Several battalions of Sunni fighters stormed a village in eastern Syria, reportedly killing at least 60 people, in a reprisal raid that underscored the sectarian tone of the war.
+							</div>
+						</div>
+						<div class="comments__item">
+							<span class="comments__time">2 hours ago</span>
+							<a href="#" class="comments__author">User Name</a>
+							<div class="comments__text">
+								Proposed rules that would require appliances, lighting and buildings to use less energy have languished for as long as two years waiting for approval, frustrating environmental advocates.
+							</div>
+						</div>
+						<div class="comments__item">
+							<span class="comments__time">2 hours ago</span>
+							<a href="#" class="comments__author">User Name</a>
+							<div class="comments__text">
+								Mayor Michael R. Bloomberg of New York will urge major donors not to aid four Democratic senators who helped block a bill on background checks.
+							</div>
+						</div>
+						<div class="comments__item">
+							<span class="comments__time">2 hours ago</span>
+							<a href="#" class="comments__author">User Name</a>
+							<div class="comments__text">
+								Complex deals that allow the companies to inflate their appearance of strength could lead to another taxpayer bailout, officials have warned.
+							</div>
+						</div>
+						<div class="comments__item">
+							<span class="comments__time">2 hours ago</span>
+							<a href="#" class="comments__author">User Name</a>
+							<div class="comments__text">
+								Several battalions of Sunni fighters stormed a village in eastern Syria, reportedly killing at least 60 people, in a reprisal raid that underscored the sectarian tone of the war.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup__close">X</div>
+		</div>
+	</div>
+
+</body>
+</html>

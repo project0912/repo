@@ -1,0 +1,2 @@
+<div class="modal-backdrop fade">&nbsp;</div>
+<div class="modal fade">{{yield}}<div>

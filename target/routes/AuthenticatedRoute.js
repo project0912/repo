@@ -1,0 +1,1 @@
+define(["ember"],function(e){var t=e.Route.extend({beforeModel:function(e){this.controllerFor("application").get("user.isLoggedIn")||this.redirectToLogin(e)},redirectToLogin:function(e){var t=this.controllerFor("UserLogin");t.set("attemptedTransition",e),this.transitionTo("user.login")}});return t});

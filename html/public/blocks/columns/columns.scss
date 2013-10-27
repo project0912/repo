@@ -1,0 +1,21 @@
+.columns {
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+		height: 1px;
+	}
+}
+
+
+.columns__left,
+.columns__right {
+	float: left;
+	width: 484px;
+	&.columns__right {
+		float: right;
+	}
+}
+
+
+

@@ -1,0 +1,40 @@
+<form {{action "updateEvidence" on="submit"}}>
+<div class="modal-header">
+    <button type="button" class="close" {{action close}}>&times;</button>
+    <h2>{{title}}</h2>
+</div>
+
+<div class="modal-body" style="max-height: 610px;">
+    {{#with error}}
+        {{#if hasErrors}}
+            <div class="alert alert-error">
+                {{errorMessage}}
+            </div>
+        {{/if}}
+     {{/with}}
+    <div class="control-group disabled">
+        <div class="row-fluid">
+            <div class="span6">
+                {{view Ember.TextField valueBinding="street" placeholder="Street" class="percentWidth90"}}
+                {{view Ember.TextField valueBinding="city" placeholder="City" class="percentWidth90"}}
+                {{view Ember.TextField valueBinding="title" placeholder="Your evidence title" class="percentWidth90"}}
+                True or false? <span></span>{{view Ember.Checkbox checkedBinding="support"}}
+            </div>
+            <div class="span6">
+                {{view App.MapMarkerCreateView latBinding=lat lngBinding=lng centreLatBinding=parentClaimLat centreLngBinding=parentClaimLng class="height250"}}
+            </div>
+       </div>
+
+       <div class="spacingBottom"></div>
+       
+       <div class="row-fluid">
+           <div class="span12">
+                {{view App.RichHTMLView descrBinding=descr placeholder="Evidence description" class="textareaStyle"}}
+           </div>
+       </div>
+    </div>
+</div>
+<div class="modal-footer">
+    {{input class="btn btn-primary" type="submit" value="Update Evidence"}}
+</div>
+</form>

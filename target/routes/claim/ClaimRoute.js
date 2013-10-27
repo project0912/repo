@@ -1,0 +1,1 @@
+define(["ember","models/Claim"],function(e,t){var n=e.Route.extend({loadedClaim:"",setupController:function(e,n){this.loadedClaim!==n.id&&(this.loadedClaim=n.id,n=t.find(n.id),this.controllerFor("claim").set("model",n))}});return n});

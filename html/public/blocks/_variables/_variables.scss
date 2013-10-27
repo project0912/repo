@@ -1,0 +1,87 @@
+/**
+* @package Verily
+* @version 1
+* @author Sergey Eroshenkov <itechmeat@gmail.com>
+* @date 27.04.2013
+*/
+
+// Grid
+$grid-width: 992px;
+$grid-third: 313px;
+$grid-space: 26px;
+
+// Colors
+$bg: #47a21b;
+$bg-2: #c6000a;
+$bg-gray: #e6e6e6;
+$color: #000;
+$color-light: #999;
+$color-white: #FFF;
+$color-link: #3FACE3;
+$color-alt: #86B603;
+
+// Fonts
+$font-size: 13px;
+$font-size-big: 14px;
+$font-size-small: 11px;
+$font-stack-verdana: Verdava, Helvetica, sans-serif;
+
+%button-blue {
+	@include background-image(linear-gradient(top, #27b8f7 0%, #27b8f7 50%, #25b0f6 51%, #25b0f6 100%));
+}
+
+%noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select	: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+%animate {
+	-moz-transition: all 100ms ease-in-out;
+	-webkit-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+}
+
+%button {
+	display: inline-block;
+	padding: 3px 10px;
+	border: 0;
+	border-radius: 10px;
+	background: #000;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	cursor: pointer;
+}
+
+%close {
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url(../blocks/_variables/img/close.png);
+	text-indent: -9999px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	cursor: pointer;
+	&:hover {
+		color: #F00;
+		background: url(../blocks/_variables/img/close_hover.png);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

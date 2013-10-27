@@ -1,0 +1,33 @@
+/* 
+    Document   : slider
+    Created on : Sep 15, 2013, 2:48:03 PM
+    Author     : apopoola
+    Description:
+        Slider Styling
+*/
+
+#slider-nav {
+    display: none;
+    margin-top: 1em;
+}
+
+#slider-nav button {
+    padding: 1em;
+    margin-right: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slider{
+    overflow: hidden;
+}
+
+.slider ul {
+    width: 10000px;
+    list-style: none;
+}
+
+.slider li {
+    float: left;
+}
+

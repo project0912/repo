@@ -1,0 +1,47 @@
+URL                          Route Name          Controller                     Route                       Template           Type
+/                            index               App.IndexController            App.IndexRoute              index              Route
+
+N/A                          user                App.UserController             App.UserRoute               user               Resource
+/user/login                  user.login          App.UserLoginController        App.userLoginRoute          user/login         Route
+/user/register               user.register       App.UserRegisterController     App.userRegisterRoute       user/register      Route
+/user/profile/:profile_id    user.profile        App.UserProfileController      App.userProfileRoute        user/profile       Route
+
+N/A                          crises              App.CrisesController           App.CrisesRoute             crises             Resource
+/crises                      crises.index        App.CrisesIndexController      App.CrisesIndexRoute        crises/index       Route
+/crises/create               crises.create       App.CrisesCreateController     App.CrisesCreateRoute       crises/create      Route
+
+N/A                          crisis              App.CrisisController           App.CrisisRoute             crisis             Resource
+/crisis/:crisis_id           crisis.index        App.CrisisIndexController      App.CrisisIndexRoute        crisis/index       Route
+/crisis/:crisis_id/makeclaim crisis.makeclaim    App.CrisisMakeClaimController  App.CrisisMakeClaimRoute    crisis/makeclaim   Route
+/crisis/:crisis_id/edit      crisis.edit         App.CrisisEditController       App.CrisisEditRoute         crisis/edit        Route
+/crisis/:crisis_id/delete    crisis.delete       App.CrisisDeleteController     App.CrisisDeleteRoute       crisis/delete      Route
+/crisis/:crisis_id/history   crisis.history      App.CrisisHistoryController    App.CrisisHistoryRoute      crisis/history     Route
+
+N/A                                             claim               App.ClaimController                 App.ClaimRoute              claim              Resource
+/crisis/:crisis_id/claim/:claim_id              claim.index         App.ClaimIndexController            App.ClaimIndexRoute         claim/index        Route
+/crisis/:crisis_id/claim/:claim_id/addevidence  claim.addevidence   App.ClaimAddevidenceController      App.ClaimAddevidenceRoute   claim/addevidence  Route
+/crisis/:crisis_id/claim/:claim_id/edit         claim.edit          App.ClaimEditController             App.ClaimEditRoute          claim/edit         Route
+/crisis/:crisis_id/claim/:claim_id/delete       claim.delete        App.ClaimDeleteController           App.ClaimDeleteRoute        claim/delete        Route
+/crisis/:crisis_id/claim/:claim_id/history      claim.history       App.ClaimHistoryController          App.ClaimHistoryRoute       claim/history       Route
+
+N/A                                                         evidence            App.EvidenceController              App.EvidenceRoute          evidence              Resource
+/crisis/:crisis_id/claim/:claim_id/evidence/:e_id           evidence.index      App.EvidenceIndexController         App.EvidenceIndexRoute     evidence/index        Route
+/crisis/:crisis_id/claim/:claim_id/evidence/:e_id/comment   evidence.comment    App.EvidenceAddEvidenceController   App.EvidenceCommentRoute   evidence/addevidence  Route
+/crisis/:crisis_id/claim/:claim_id/evidence/:e_id/edit      evidence.edit       App.EvidenceEditController          App.EvidenceEditRoute      evidence/edit         Route
+/crisis/:crisis_id/claim/:claim_id/evidence/:e_id/delete    evidence.delete     App.EvidenceDeleteController        App.EvidenceDeleteRoute    evidence/delete       Route
+/crisis/:crisis_id/claim/:claim_id/evidence/:e_id/history   evidence.history    App.EvidenceHistoryController       App.EvidenceHistoryRoute   evidence/history      Route
+
+
+KEY:
+e_id -> evidence_id
+
+
+
+NOTES
+/crises will retrieve and show all crises.
+/crisis/:crisis_id will show information for one particular crisis which will include information about the claims.
+.../delete routes might be removed
+only evidences have comments?
+evidence comment should render into second outlet on evidence page
+can you view a single comment?
+Change nesting in favour of specified URL paths?

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head lang="ru">
+	<meta charset="utf-8">
+	<title>Verily</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://sitename.lh/">
+	<meta property="og:title" content="Copy title">
+	<meta property="og:description" content="Copy description">
+	<meta property="og:image" content="//sitename.lh/images/social.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="icon" href="../public/images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-startup-image" href="/apple-touch-icon-ipad3.png">
+	<link rel="stylesheet" href="../public/css/styles.css" media="all">
+	<link rel="stylesheet" href="//yandex.st/jquery-ui/1.10.2/themes/base/jquery-ui.min.css" media="all">
+	<script charset="utf-8" src="//yandex.st/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<header class="header" role="banner">
+		<div class="wrapper">
+			<a class="header__add" href="#">Post a Claim</a>
+			<nav class="nav header__nav" role="navigation">
+				<div class="nav__name">Catigories</div>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#" class="nav__link">Category 1</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Category 2</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">Category 3</a></li>
+				</ul>
+			</nav>
+			<div class="header__auth">
+				<a href="#" class="header__link">Register</a>
+				<a href="#" class="header__link" id="loginLink">Login</a>
+				<form class="form header__login" action="">
+					<div class="form__row">
+						<input class="form__input" type="text" placeholder="Your login">
+						<div class="form__error">Enter your login</div>
+					</div>
+					<div class="form__row">
+						<input class="form__input" type="password" placeholder="Your password">
+						<div class="form__error">Enter your password</div>
+					</div>
+					<div class="form__row">
+						<button type="submit" class="form__button header__button_login">Login</button>
+					</div>
+				</form>
+				<script>
+					$('#loginLink').click(function() {
+						$(this).addClass('header__link_active');
+						$(".header__login").show();
+					});
+				</script>
+			</div>
+			<form class="header__search" action="">
+				<input type="text" placeholder="Search for..." class="form__input header__search-input">
+				<button type="submit" class="form__button header__search-button"><img src="../public/blocks/header/img/search.png" alt=""></button>
+			</form>
+			<div class="header__site">
+				<a class="header__logo" href="#" rel="home"><img src="../public/blocks/header/img/logo.png" alt=""></a>
+			</div>
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<section class="main">
+
+			<div class="map" style="height:300px;">Place for map</div>
+
+			<div class="columns">
+				<div class="columns__left">
+					<div class="boxes boxes_tiny">
+						<div class="boxes__head">
+							<h2 class="boxes__name">Recent</h2>
+						</div>
+						<div class="boxes__list">
+							<div class="boxes__item">
+								<div class="post post_tiny">
+									<div class="post__text">
+										<h2><a href="#">A gas leak, lead to a massive explosion.</a></h2>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+									</div>
+									<div class="post__location"><a href="#">Bosnia and Herzegovina</a>, Sarajevo</div>
+									<div class="post__views">12K views</div>
+								</div>
+							</div>
+							<div class="boxes__item">
+								<div class="post post_tiny">
+									<div class="post__text">
+										<h2><a href="#">A gas leak, lead to a massive explosion.</a></h2>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+									</div>
+									<div class="post__location"><a href="#">Bosnia and Herzegovina</a>, Sarajevo</div>
+									<div class="post__views">12K views</div>
+								</div>
+							</div>
+							<div class="boxes__item">
+								<div class="post post_tiny">
+									<div class="post__text">
+										<h2><a href="#">A gas leak, lead to a massive explosion.</a></h2>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+									</div>
+									<div class="post__location"><a href="#">Bosnia and Herzegovina</a>, Sarajevo</div>
+									<div class="post__views">12K views</div>
+								</div>
+							</div>
+							<div class="boxes__item">
+								<div class="post post_tiny">
+									<div class="post__text">
+										<h2><a href="#">A gas leak, lead to a massive explosion.</a></h2>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+									</div>
+									<div class="post__location"><a href="#">Bosnia and Herzegovina</a>, Sarajevo</div>
+									<div class="post__views">12K views</div>
+								</div>
+							</div>
+							<div class="boxes__item">
+								<div class="post post_tiny">
+									<div class="post__text">
+										<h2><a href="#">A gas leak, lead to a massive explosion.</a></h2>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+									</div>
+									<div class="post__location"><a href="#">Bosnia and Herzegovina</a>, Sarajevo</div>
+									<div class="post__views">12K views</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="columns__right">
+					<div class="boxes boxes_tiny">
+						<div class="boxes__head">
+							<h2 class="boxes__name">Top</h2>
+						</div>
+						<div class="boxes__list boxes__list_empty">
+							<div class="boxes__item">
+								<div class="boxes__empty">Empty :(</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</div>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<span class="footer__copyright">© 2013 QCRI</span>
+			<a href="#" class="footer__link">About</a>
+			<a href="#" class="footer__link">Site Map</a>
+			<a href="#" class="footer__link">RSS</a>
+			<a href="#" class="footer__link">Help</a>
+			<a href="#" class="footer__link">Privacy</a>
+			<a href="#" class="footer__link">Terms of Service</a>
+			<a href="#" class="footer__link">Site Feedback</a>
+			<a href="#" class="footer__link">Contact Us</a>
+			<a href="#" class="footer__link">Press & Blogs</a>
+			<a href="#" class="footer__link">Copyright</a>
+			<a href="#" class="footer__link">Creators & Partners</a>
+		</div>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+define(["ember","models/Evidence"],function(e,t){var n=e.Route.extend({loadedEvidence:"",setupController:function(e,n){this.loadedEvidence!==n.id&&(this.loadedEvidence=n.id,n=t.find(n.id),this.controllerFor("evidence").set("model",n))}});return n});

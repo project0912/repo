@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite>
+		
+			<testcase name="js/app.js">
+				
+			</testcase>
+		
+			<testcase name="js/config.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/ApplicationController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/IndexController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/claim/ClaimAddevidenceController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/claim/ClaimController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/claim/ClaimEditController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/claim/ClaimIndexController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/crises/CrisesController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/crises/CrisesCreateController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/crises/CrisesIndexController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/crisis/CrisisController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/crisis/CrisisEditController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/crisis/CrisisIndexController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/crisis/CrisisMakeclaimController.js">
+				
+					<failure message="82:22: Unnecessary semicolon." />
+				
+			</testcase>
+		
+			<testcase name="js/controllers/evidence/EvidenceController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/evidence/EvidenceEditController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/evidence/EvidenceIndexController.js">
+				
+			</testcase>
+		
+			<testcase name="js/controllers/user/UserLoginController.js">
+				
+			</testcase>
+		
+			<testcase name="js/main.js">
+				
+			</testcase>
+		
+			<testcase name="js/models/AuthorInfoMixin.js">
+				
+			</testcase>
+		
+			<testcase name="js/models/Claim.js">
+				
+			</testcase>
+		
+			<testcase name="js/models/Comment.js">
+				
+			</testcase>
+		
+			<testcase name="js/models/Crisis.js">
+				
+					<failure message="67:34: Don't make functions within a loop." />
+				
+			</testcase>
+		
+			<testcase name="js/models/Error.js">
+				
+			</testcase>
+		
+			<testcase name="js/models/Errors.js">
+				
+			</testcase>
+		
+			<testcase name="js/models/Evidence.js">
+				
+					<failure message="57:34: Don't make functions within a loop." />
+				
+			</testcase>
+		
+			<testcase name="js/models/LocationMixin.js">
+				
+			</testcase>
+		
+			<testcase name="js/models/StatsMixin.js">
+				
+			</testcase>
+		
+			<testcase name="js/models/Tag.js">
+				
+			</testcase>
+		
+			<testcase name="js/models/User.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/ApplicationRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/IndexRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/claim/ClaimAddevidenceRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/claim/ClaimEditRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/claim/ClaimIndexRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/claim/ClaimRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/crises/CrisesCreateRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/crises/CrisesIndexRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/crisis/CrisisEditRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/crisis/CrisisIndexRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/crisis/CrisisMakeclaimRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/crisis/CrisisRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/evidence/EvidenceEditRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/evidence/EvidenceIndexRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/evidence/EvidenceRoute.js">
+				
+					<failure message="6:12: Mixed spaces and tabs." />
+				
+					<failure message="7:12: Mixed spaces and tabs." />
+				
+			</testcase>
+		
+			<testcase name="js/routes/router.js">
+				
+			</testcase>
+		
+			<testcase name="js/routes/user/UserLoginRoute.js">
+				
+			</testcase>
+		
+			<testcase name="js/tests/dummyData.js">
+				
+			</testcase>
+		
+			<testcase name="js/tests/stringGenerator.js">
+				
+					<failure message="21:1: Mixed spaces and tabs." />
+				
+					<failure message="22:1: Mixed spaces and tabs." />
+				
+					<failure message="23:1: Mixed spaces and tabs." />
+				
+			</testcase>
+		
+			<testcase name="js/tests/testMain.js">
+				
+					<failure message="22:1: Mixed spaces and tabs." />
+				
+					<failure message="23:1: Mixed spaces and tabs." />
+				
+					<failure message="24:1: Mixed spaces and tabs." />
+				
+					<failure message="25:1: Mixed spaces and tabs." />
+				
+					<failure message="26:1: Mixed spaces and tabs." />
+				
+					<failure message="27:1: Mixed spaces and tabs." />
+				
+					<failure message="28:1: Mixed spaces and tabs." />
+				
+					<failure message="29:1: Mixed spaces and tabs." />
+				
+					<failure message="39:12: Mixed spaces and tabs." />
+				
+			</testcase>
+		
+			<testcase name="js/tests/validatorTests.js">
+				
+					<failure message="22:28: The object literal notation {} is preferrable." />
+				
+					<failure message="26:28: The array literal notation [] is preferrable." />
+				
+					<failure message="103:22: Don't make functions within a loop." />
+				
+					<failure message="123:22: Don't make functions within a loop." />
+				
+					<failure message="144:22: Don't make functions within a loop." />
+				
+					<failure message="173:22: Don't make functions within a loop." />
+				
+					<failure message="198:22: Don't make functions within a loop." />
+				
+					<failure message="219:8: Mixed spaces and tabs." />
+				
+					<failure message="220:8: Mixed spaces and tabs." />
+				
+					<failure message="221:8: Mixed spaces and tabs." />
+				
+					<failure message="222:8: Mixed spaces and tabs." />
+				
+					<failure message="223:8: Mixed spaces and tabs." />
+				
+					<failure message="224:8: Mixed spaces and tabs." />
+				
+					<failure message="225:8: Mixed spaces and tabs." />
+				
+					<failure message="226:8: Mixed spaces and tabs." />
+				
+					<failure message="227:8: Mixed spaces and tabs." />
+				
+					<failure message="228:8: Mixed spaces and tabs." />
+				
+			</testcase>
+		
+			<testcase name="js/utils/ErrorInfo.js">
+				
+			</testcase>
+		
+			<testcase name="js/utils/ajax.js">
+				
+			</testcase>
+		
+			<testcase name="js/utils/asserts.js">
+				
+			</testcase>
+		
+			<testcase name="js/utils/constants.js">
+				
+			</testcase>
+		
+			<testcase name="js/utils/store.js">
+				
+			</testcase>
+		
+			<testcase name="js/utils/utils.js">
+				
+			</testcase>
+		
+			<testcase name="js/utils/validator.js">
+				
+			</testcase>
+		
+			<testcase name="js/views/AutoCompleteFieldView.js">
+				
+			</testcase>
+		
+			<testcase name="js/views/ClaimAddevidenceView.js">
+				
+			</testcase>
+		
+			<testcase name="js/views/ClaimEditView.js">
+				
+			</testcase>
+		
+			<testcase name="js/views/CrisesCreateView.js">
+				
+			</testcase>
+		
+			<testcase name="js/views/CrisisEditView.js">
+				
+			</testcase>
+		
+			<testcase name="js/views/CrisisMakeclaimView.js">
+				
+			</testcase>
+		
+			<testcase name="js/views/EvidenceEditView.js">
+				
+			</testcase>
+		
+			<testcase name="js/views/EvidenceView.js">
+				
+			</testcase>
+		
+			<testcase name="js/views/MapInfoView.js">
+				
+			</testcase>
+		
+			<testcase name="js/views/MapMarkerCreateView.js">
+				
+			</testcase>
+		
+			<testcase name="js/views/MapPolygonCreateView.js">
+				
+			</testcase>
+		
+			<testcase name="js/views/UserLoginView.js">
+				
+			</testcase>
+		
+	</testsuite>
+</testsuites>

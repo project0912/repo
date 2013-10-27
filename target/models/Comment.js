@@ -1,0 +1,1 @@
+define(["ember","models/AuthorInfoMixin","models/StatsMixin","jquery"],function(e,t,n,r){var i=e.Object.extend(t,n,{id:"",descr:"",evidenceID:"",commentID:e.computed.alias("id")});return i});

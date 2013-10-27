@@ -1,0 +1,47 @@
+.nav {
+	position: relative;
+	z-index: 10;
+}
+
+.nav__name {
+	padding: 15px $grid-space 14px $grid-space;
+	color: #000;
+	line-height: 1;
+	font-size: 18px;
+	text-decoration: none;
+	cursor: pointer;
+	&:after {
+		content: '▼';
+		margin-left: 10px;
+	}
+	&:hover,
+	.nav:hover & {
+		background: rgba(#FFF,.2);
+	}
+}
+
+.nav__list {
+	display: none;
+	position: absolute;
+	top: 47px;
+	left: -1px;
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+	border: 1px solid #153408;
+	border-top: 0;
+	list-style: none;
+	background: #3f9718;
+	.nav:hover & {
+		display: block;
+	}
+}
+.nav__link {
+	display: block;
+	padding: 5px 10px;
+	color: #FFF;
+	background: rgba(#FFF,.2);
+	&:hover {
+		background: rgba(#000,.2);
+	}
+}

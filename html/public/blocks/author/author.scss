@@ -1,0 +1,18 @@
+.author {
+	font-size: 12px;
+}
+.author__date {
+	margin: 0 0 5px 0;
+}
+.author__avatar {
+	float: left;
+	margin: 0 10px 0 0;
+	img {
+		width: 50px;
+		height: 50px
+	}
+}
+.author__name,
+.author__rang {
+	line-height: 2;
+}

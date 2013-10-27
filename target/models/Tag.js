@@ -1,0 +1,1 @@
+define(["ember"],function(e){var t=e.Object.extend({});return t});

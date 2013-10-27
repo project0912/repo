@@ -1,0 +1,1 @@
+define(["ember"],function(e){var t=function(t,n){e.assert(n,t);if(!t)throw new Error("Assertion failed: "+n)};return t});

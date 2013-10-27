@@ -1,0 +1,197 @@
+    /**
+     * validates the title for a crisis
+     * TODO decide what do we consider as a valid title for a crisis
+     *
+     * currently it is considered as valid if
+     * it is a string and 
+     * its length >= 10 && <=60
+     *
+     * @param string    $crisisTitle
+     * @return bool
+     */
+    public static function validCrisisTitle($crisisTitle)
+
+
+    /**
+     * validates description for a crisis
+     * TODO decide what do we consider as a valid description for a crisis
+     *
+     * currently it is considered as valid if
+     * it is a string and
+     * its length >= 30 && <=1000
+     * 
+     * @param string    $crisisDescription
+     * @return bool
+     */
+    public static function validCrisisDescription($crisisDescription)
+
+
+    /**
+     * validates the title for a claim
+     * TODO decide what do we consider as a valid title for a claim
+     * 
+     * currently it is just a wrapper on validCrisisTitle
+     *
+     * @param string    $claimTitle
+     * @return bool
+     */
+    public static function validClaimTitle($claimTitle)
+
+
+    /**
+     * validates description for a claim
+     * TODO decide what do we consider as a valid description for a claim
+     *
+     * currently it is just a wrapper on validCrisisDescription
+     * 
+     * @param string    $claimDescription
+     * @return bool
+     */
+    public static function validClaimDescription($claimDescription)
+
+
+    /**
+     * validates the title for an evidence
+     * TODO decide what do we consider as a valid title for an evidence
+     *
+     * currently it is just a wrapper on validCrisisTitle
+     * 
+     * @param string    $evidenceTitle
+     * @return bool
+     */
+    public static function validEvidenceTitle($evidenceTitle)
+
+
+    /**
+     * validates description for an evidence
+     * TODO decide what do we consider as a valid description for an evidence
+     *
+     * currently it is just a wrapper on validCrisisDescription
+     * 
+     * @param string    $evidenceDescription
+     * @return bool
+     */
+    public static function validEvidenceDescription($evidenceDescription)
+
+
+    /**
+     * validates a zoom level for google maps
+     * 
+     * Zoom level is valid in google maps if it is an integer and it is in the range [1, 20]
+     * 
+     * @param int   $zoom
+     * @return bool
+     */
+    public static function validZoom($zoom)
+
+
+    /**
+     * validates if the integer supports or opposes a claim
+     *
+     * support can be only a integer and 0 or 1
+     * 
+     * @param int   $int
+     * @return bool
+     */
+    public static function validSupport($int)
+
+
+    /**
+     * validates the comment submitted for an evidence
+     * TODO decide what do we consider as a valid comment for an evidence
+     *
+     * currently it is just a wrapper on validCrisisDescription
+     * 
+     * @param string    $comment
+     * @return bool
+     */
+    public static function validComment($comment)
+
+
+    /**
+     * validates the string as a valid mongoID
+     *
+     * mongoID considered as valid if it is a string with a length of 24
+     * it has only numbers 0-9 and letters a-f
+     * 
+     * @param string    $mongoString
+     * @return bool|MongoId
+     */
+    public static function validMongoID($mongoString)
+
+
+    /**
+     * checks if the country is correct
+     *
+     * TODO parse countries database, get list of all countries
+     * 
+     * right now any integer >0 <255
+     * 
+     * @param int   $countryID
+     * @return bool
+     */
+    public static function validCountry($countryID)
+
+
+    /**
+     * checks if the city is correct
+     *
+     * TODO find the biggest database with cities, parse it, get list of all cities
+     *
+     * right now any integer > 0 < 36255 is valid
+     *
+     * @param int $cityID
+     * @return bool
+     */
+    public static function validCity($cityID)
+
+
+    /**
+     * checks if the latitude and longitude are correct
+     *
+     * more about correct lat, lng
+     * https://developers.google.com/maps/documentation/javascript/3.exp/reference#LatLng
+     * http://docs.mongodb.org/manual/applications/geospatial-indexes/
+     * http://www.geojson.org/geojson-spec.html
+     *
+     * @param $lat
+     * @param $lng
+     * @return bool
+     */
+    public static function validLatLng($lat, $lng)
+
+
+    /**
+     * checks if all the markers have a valid format and if so, return a list of valid markers
+     *
+     * markers are valid if at least there are 5 points, and each point consists of
+     * two coordinates and they have valid lat, lng coordinates
+     *
+     * @param array     $markers
+     * @return array|bool
+     */
+    public static function validMarkers($markers)
+
+
+    /**
+     * checks if the street is valid
+     *
+     * TODO what is considered as a valid street
+     * right now any string with length >= 4 && <= 16
+     * 
+     * @param string    $streetName
+     * @return bool
+     */
+    public static function validStreet($streetName)
+
+
+    /**
+     * validates a value of severity
+     * severity can be from 1 to 5 including
+     *
+     * @param int   $severity
+     * @return bool
+     */
+    public static function validSeverity($severity)
+
+

@@ -1,0 +1,1 @@
+define(["ember","models/Crisis"],function(e,t){var n=e.Route.extend({loadedCrisis:"",setupController:function(e,n){this.loadedCrisis!==n.id&&(this.loadedCrisis=n.id,n=t.find(n.id),this.controllerFor("crisis").set("model",n))}});return n});

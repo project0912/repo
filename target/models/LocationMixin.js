@@ -1,0 +1,1 @@
+define(["ember"],function(e){var t=e.Mixin.create({lat:"",lng:"",street:"",city:"",cityID:"",country:"",countryID:"",markers:""});return t});

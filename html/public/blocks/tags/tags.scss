@@ -1,0 +1,14 @@
+.tags {}
+
+.tags__item {
+	display: inline-block;
+	margin: 0 5px 5px 0;
+	padding: 0 10px 2px 10px;
+	border-radius: 10px;
+	background: #7f7f7f;
+	color: #FFF;
+	text-decoration: none;
+	&:hover {
+		background: $color-link;
+	}
+}

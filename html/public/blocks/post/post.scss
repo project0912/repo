@@ -1,0 +1,262 @@
+.post {
+	margin: 0 0 30px 0;
+}
+
+.post__img {
+	float: left;
+	margin: 0 20px 30px 0;
+	width: 270px;
+}
+
+.post__content {
+	overflow: hidden;
+}
+.post__text {
+	margin: 5px 0 8px 0;
+	border: 2px solid #d9d9d9;
+	border-left: 0;
+	border-right: 0;
+	h1 {
+		margin: 3px 0 10px 0;
+		font-size: 16px;
+	}
+	h2 {
+		margin: 3px 0 0 0;
+		font-size: 15px;
+	}
+}
+.post__edit {
+	margin: 0 0 0 5px;
+	font-size: 12px;
+	color: #F00;
+}
+
+
+.post__location {
+	a {
+		color: #7d0006;
+	}
+}
+
+.post__tags {
+	margin: 0 0 10px 10px;
+}
+
+.post__author {
+	float: right;
+	margin: 0 0 20px 20px;
+	color: #7f7f7f;
+}
+.post__author_tiny {
+	float: none;
+	margin: 10px 0 0 0;
+}
+.post__date {
+	margin: 0 0 5px 0;
+}
+.post__avatar {
+	float: left;
+	margin: 0 10px 0 0;
+	img {
+		width: 50px;
+		height: 50px
+	}
+}
+.post__name,
+.post__rang {
+	line-height: 2;
+}
+
+.post__stat {
+	clear: right;
+	margin: 0 0 30px 0;
+}
+.post__go {
+	clear: right;
+	height: 28px;
+}
+.post__go-item {
+	display: inline-block;
+	margin: 0 25px 0 27px;
+	width: 54px;
+	height: 24px;
+	background: inline-image('../blocks/post/img/go.png') no-repeat 0 0;
+	line-height: 24px;
+	text-align: center;
+	&:first-child {
+		float: right;
+		margin: 0;
+	}
+}
+.post__go-action {
+	float: left;
+	width: 24px;
+	height: 24px;
+	margin: 0 0 0 -27px;
+	background: inline-image('../blocks/post/img/go-important.png') no-repeat 0 0;
+	text-indent: -9999px;
+}
+.post__go-important {
+	width: 28px;
+	height: 28px;
+	margin: -2px 0 0 -31px;
+	background: inline-image('../blocks/post/img/go-important.png') no-repeat 0 0;
+}
+.post__go-positive {
+	background: inline-image('../blocks/post/img/go-true.png') no-repeat 0 0;
+}
+.post__go-negative {
+	background: inline-image('../blocks/post/img/go-falce.png') no-repeat 0 0;
+}
+
+.post__share {
+	display: inline-block;
+	margin: 10px;
+}
+
+.post__flag {
+	display: inline-block;
+	margin: 10px;
+}
+
+.post__stat-item {
+	display: inline-block;
+	margin: 0 30px 0 0;
+	padding: 0 16px;
+	height: 30px;
+	border-radius: 20px;
+	background: $bg-gray;
+	font-size: 12px;
+	line-height: 30px;
+	b {
+		margin-right: 10px;
+		font-size: 14px;
+	}
+	&:before {
+		content: '';
+		float: left;
+		margin: 3px 14px 0 -7px;
+		width: 24px;
+		height: 24px;
+		background: inline-image('../blocks/post/img/stat.png') no-repeat 0 50px;
+	}
+}
+.post__stat-important {
+	float: right;
+	margin: 0;
+	&:before {
+		margin: 1px 14px 0 -15px;
+		border: 2px solid $bg;
+		border-radius: 15px;
+		background-position: -81px 1px;
+	}
+}
+.post__stat-positive {
+	&:before {
+		background-position: 0 1px;
+	}
+}
+.post__stat-negative {
+	&:before {
+		background-position: -41px 1px;
+	}
+}
+
+.post__actions {
+	clear: both;
+}
+.post__action {
+	display: inline-block;
+	margin: 0 30px 0 0;
+	height: 40px;
+	padding: 0 50px;
+	border-radius: 50px;
+	box-shadow: 0 2px 4px #555;
+	background: $bg-gray;
+	line-height: 40px;
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+	@extend %animate;
+	&:before {
+		content: '';
+		float: left;
+		margin: 1px 0 0 -44px;
+		width: 38px;
+		height: 38px;
+		background: inline-image('../blocks/post/img/actions.png') no-repeat 0 50px;
+	}
+	&:hover {
+		box-shadow: 0 2px 10px #000;
+		color: #FFF;
+	}
+}
+.post__action_important {
+	float: right;
+	margin: 0 0 0 30px;
+	border: 1px solid $bg;
+	box-sizing: border-box;
+	background: #FFF;
+	&:before {
+		margin: -1px 0 0 -50px;
+		border: 1px solid $bg;
+		border-radius: 50px;
+		background-position: -72px 5px;
+	}
+	&:hover {
+		color: $bg;
+	}
+}
+.post__action_true {
+	background: $bg;
+	&:before {
+		background-position: 7px 8px;
+	}
+}
+.post__action_falce {
+	background: $bg-2;
+	&:before {
+		background-position: -32px 8px;
+	}
+}
+
+.post__views {
+	padding-top: 5px;
+	border-top: 2px solid #d9d9d9;
+}
+
+
+
+//
+// @mod BOXES
+//
+.post_boxes {
+	margin: 0 4px;
+	padding: 4px 0;
+	.post__text {
+		border-bottom: 0;
+	}
+}
+
+
+
+//
+// @mod TINY
+//
+.post_tiny {
+	margin: 0;
+	padding: 5px;
+	border: 5px solid #d9d9d9;
+	.post__text {
+		border-top: 0;
+		font-size: 11px;
+	}
+	.post__location {
+		padding-bottom: 5px;
+		font-size: 11px;
+	}
+}
+
+
+
